@@ -1,8 +1,11 @@
 ---
-abstract: 'Perl extension to detect on which Linux distribution we are running.'
+abstract: Perl extension to detect on which Linux distribution we are running.
 author:
   - 'Alexandr Ciornii <alexchorny@gmail.com>'
-generated_by: 'Module::Build version 0.3617'
+build_requires:
+  Test::More: 0
+dynamic_config: 1
+generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.112150'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -11,11 +14,10 @@ name: Linux-Distribution
 provides:
   Linux::Distribution:
     file: lib/Linux/Distribution.pm
-    version: 0.20
+    version: 0.21
 requires:
-  Test::More: 0
   perl: 5.006
 resources:
   license: http://dev.perl.org/licenses/
   repository: https://github.com/chorny/Linux-Distribution
-version: 0.20
+version: 0.21

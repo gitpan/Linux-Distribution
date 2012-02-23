@@ -17,7 +17,9 @@ my $build = Module::Build->new(
   },
   'requires' => {
     'perl' => '5.006',
-    'Test::More' => 0
+  },
+  'build_requires' => {
+    'Test::More' => 0,
   },
   'license' => 'perl',
   'dist_version_from' => 'lib/Linux/Distribution.pm'
